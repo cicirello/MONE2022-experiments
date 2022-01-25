@@ -23,6 +23,8 @@
  * <a href=https://www.cicirello.org/ target=_top>https://www.cicirello.org/</a>
  */
 module org.cicirello.mone_article_experiments {
+	exports org.cicirello.experiments.mone2022;
+	
 	requires org.cicirello.chips_n_salsa;
 	requires org.cicirello.jpt;
 	requires org.cicirello.rho_mu;
