@@ -14,7 +14,7 @@ build:
 # Runs all experiments
 
 .PHONY: experiments
-experiments: tsp atsp
+experiments: tsp atsp HaystackEM
 
 .PHONY: tsp
 tsp:
@@ -23,3 +23,7 @@ tsp:
 .PHONY: atsp
 atsp:
 		java -cp ${JARFILE} org.cicirello.experiments.mone2022.ATSPExperiments > ${pathToDataFiles}/atsp.txt
+
+.PHONY: HaystackEM
+HaystackEM:
+		java -cp ${JARFILE} org.cicirello.experiments.mone2022.HaystackEMExperiments > ${pathToDataFiles}/haystack.em.txt
