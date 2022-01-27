@@ -33,8 +33,8 @@ import org.cicirello.search.operators.permutations.ScrambleMutation;
 import org.cicirello.search.operators.permutations.UniformScrambleMutation;
 import org.cicirello.search.problems.tsp.RandomTSPMatrix;
 import org.cicirello.search.evo.GenerationalMutationOnlyEvolutionaryAlgorithm;
-import org.cicirello.search.evo.NegativeIntegerCostFitnessFunction;
-import org.cicirello.search.evo.TruncationSelection;
+import org.cicirello.search.evo.InverseCostFitnessFunction;
+import org.cicirello.search.evo.StochasticUniversalSampling;
 import org.cicirello.search.operators.permutations.PermutationInitializer;
 
 /**
@@ -96,8 +96,9 @@ public class TSPExperiments {
 						mutation.split(),
 						1.0,
 						new PermutationInitializer(NUM_CITIES),
-						new NegativeIntegerCostFitnessFunction<Permutation>(problem),
-						new TruncationSelection(POPULATION_SIZE / 4)
+						new InverseCostFitnessFunction<Permutation>(problem),
+						new StochasticUniversalSampling(),
+						1
 					)
 				);
 			}
