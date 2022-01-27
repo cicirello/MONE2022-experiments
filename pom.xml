@@ -170,7 +170,7 @@
 		<dependency>
 			<groupId>org.cicirello</groupId>
 			<artifactId>chips-n-salsa</artifactId>
-			<version>4.2.0</version>
+			<version>4.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.cicirello</groupId>
