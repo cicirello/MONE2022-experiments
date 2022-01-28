@@ -119,6 +119,7 @@ public class ATSPExperiments {
 				}
 				prevTotalGens = totalGenerations;
 				System.out.println();
+				System.out.flush();
 			}
 		}
 	}

@@ -120,6 +120,7 @@ public class HaystackTauExperiments {
 				}
 				prevTotalGens = totalGenerations;
 				System.out.println();
+				System.out.flush();
 			}
 		}
 	}

@@ -119,6 +119,7 @@ public class TSPExperiments {
 				}
 				prevTotalGens = totalGenerations;
 				System.out.println();
+				System.out.flush();
 			}
 		}
 	}

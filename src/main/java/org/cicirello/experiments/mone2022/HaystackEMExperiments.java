@@ -120,6 +120,7 @@ public class HaystackEMExperiments {
 				}
 				prevTotalGens = totalGenerations;
 				System.out.println();
+				System.out.flush();
 			}
 		}
 	}
