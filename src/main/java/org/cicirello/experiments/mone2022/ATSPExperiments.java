@@ -54,8 +54,8 @@ public class ATSPExperiments {
 		final int MAX_DISTANCE_BETWEEN_CITIES = 1000;
 		final int NUM_INSTANCES = 100;
 		final int POPULATION_SIZE = 100;
-		final int INTERVAL = 10; // generations
-		final int NUM_INTERVALS = 100;
+		
+		final int MAX_GENERATIONS = 10000;
 		
 		ArrayList<MutationOperator<Permutation>> mutationOps = new ArrayList<MutationOperator<Permutation>>();
 		ArrayList<String> columnLabels = new ArrayList<String>(); 
@@ -103,19 +103,21 @@ public class ATSPExperiments {
 				);
 			}
 			
-			System.out.print(seed + "\t" + INTERVAL);
+			int totalGenerations = 1;
+			System.out.print(seed + "\t" + totalGenerations);
 			for (GenerationalMutationOnlyEvolutionaryAlgorithm<Permutation> ea : evos) {
-				ea.optimize(INTERVAL);
+				ea.optimize(totalGenerations);
 				System.out.print("\t" + ea.getProgressTracker().getCost());
 			}
 			System.out.println();
-			for (int i = 1; i < NUM_INTERVALS; i++) {
-				int totalNumGens = INTERVAL * (i + 1);
-				System.out.print(seed + "\t" + totalNumGens);
+			int prevTotalGens = totalGenerations;
+			for (totalGenerations *= 10; totalGenerations <= MAX_GENERATIONS; totalGenerations *= 10) {
+				System.out.print(seed + "\t" + totalGenerations);
 				for (GenerationalMutationOnlyEvolutionaryAlgorithm<Permutation> ea : evos) {
-					ea.reoptimize(INTERVAL);
+					ea.reoptimize(totalGenerations - prevTotalGens);
 					System.out.print("\t" + ea.getProgressTracker().getCost());
 				}
+				prevTotalGens = totalGenerations;
 				System.out.println();
 			}
 		}
