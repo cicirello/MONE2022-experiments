@@ -17,6 +17,7 @@
 
 import sys
 import statistics
+import matplotlib.pyplot
 
 def parse(filename) :
     """Computes average costs for each number of generations
@@ -35,7 +36,7 @@ def parse(filename) :
             else :
                 row = line.split()
                 if len(row) > 2 :
-                    generations = int(row[1])
+                    generations = row[1]
                     if int(row[0]) == 1 :
                         lengths.append(generations)
                     for i in range(2, len(row)) :
@@ -51,6 +52,8 @@ def parse(filename) :
 
 if __name__ == "__main__" :
     datafile = sys.argv[1]
+    figureFilename = datafile[:-4] + ".svg"
+    epsFilename = datafile[:-4] + ".eps"
     data, headings, lengths = parse(datafile)
     means = { headings[i] : [] for i in range(2, len(headings)) }
     devs = { headings[i] : [] for i in range(2, len(headings)) }
@@ -82,5 +85,19 @@ if __name__ == "__main__" :
             head = headings[j]
             print("\t{0:.2f}".format(devs[head][i]), end="")
         print()
-    
-    
+
+    w = 3.3
+    h = w
+    matplotlib.pyplot.rc('font', size=8)
+    matplotlib.pyplot.rc('text', usetex=True)
+    fig, ax = matplotlib.pyplot.subplots(figsize=(w,h), constrained_layout=True)
+    matplotlib.pyplot.xlabel('number of generations (log scale)')
+    matplotlib.pyplot.ylabel('solution cost')
+    for i in range(2, len(headings)) :
+        line, = ax.plot(lengths,
+                        means[headings[i]],
+                        #styles[i],
+                        label = headings[i])
+    ax.legend()
+    matplotlib.pyplot.savefig(figureFilename)
+    matplotlib.pyplot.savefig(epsFilename)
