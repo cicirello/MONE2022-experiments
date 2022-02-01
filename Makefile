@@ -23,6 +23,14 @@ analysis:
 	$(py) src/analysis/summarize-stats.py ${pathToDataFiles}/haystack.tau.txt > ${pathToDataFiles}/summary.haystack.tau.txt
 	$(py) src/analysis/summarize-stats.py ${pathToDataFiles}/haystack.lee.txt > ${pathToDataFiles}/summary.haystack.lee.txt
 
+.PHONY: epstopdf
+epstopdf:
+	epstopdf ${pathToDataFiles}/tsp.eps
+	epstopdf ${pathToDataFiles}/atsp.eps
+	epstopdf ${pathToDataFiles}/haystack.em.eps
+	epstopdf ${pathToDataFiles}/haystack.tau.eps
+	epstopdf ${pathToDataFiles}/haystack.lee.eps
+
 # Runs all experiments
 
 .PHONY: experiments
