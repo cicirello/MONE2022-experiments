@@ -53,11 +53,13 @@ if __name__ == "__main__" :
     datafile = sys.argv[1]
     data, headings, lengths = parse(datafile)
     means = { headings[i] : [] for i in range(2, len(headings)) }
+    devs = { headings[i] : [] for i in range(2, len(headings)) }
     for gens in lengths :
         for i in range(2, len(headings)) :
             head = headings[i]
             means[head].append(statistics.mean(data[(gens, head)]))
-
+            devs[head].append(statistics.stdev(data[(gens, head)]))
+    print("MEANS")
     print(headings[1], end="")
     for i in range(2, len(headings)) :
         print("\t" + headings[i], end="")
@@ -67,6 +69,18 @@ if __name__ == "__main__" :
         for j in range(2, len(headings)) :
             head = headings[j]
             print("\t{0:.2f}".format(means[head][i]), end="")
+        print()
+    print()
+    print("STDEVS")
+    print(headings[1], end="")
+    for i in range(2, len(headings)) :
+        print("\t" + headings[i], end="")
+    print()
+    for i, gens in enumerate(lengths) :
+        print(gens, end="")
+        for j in range(2, len(headings)) :
+            head = headings[j]
+            print("\t{0:.2f}".format(devs[head][i]), end="")
         print()
     
     
