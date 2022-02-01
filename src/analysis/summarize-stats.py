@@ -86,7 +86,7 @@ if __name__ == "__main__" :
             print("\t{0:.2f}".format(devs[head][i]), end="")
         print()
 
-    w = 3.3
+    w = 2.98
     h = w
     matplotlib.pyplot.rc('font', size=8)
     matplotlib.pyplot.rc('text', usetex=True)
