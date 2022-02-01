@@ -92,7 +92,7 @@ if __name__ == "__main__" :
     matplotlib.pyplot.rc('text', usetex=True)
     fig, ax = matplotlib.pyplot.subplots(figsize=(w,h), constrained_layout=True)
     matplotlib.pyplot.xlabel('number of generations (log scale)')
-    matplotlib.pyplot.ylabel('solution cost')
+    matplotlib.pyplot.ylabel('average solution cost')
     for i in range(2, len(headings)) :
         line, = ax.plot(lengths,
                         means[headings[i]],
