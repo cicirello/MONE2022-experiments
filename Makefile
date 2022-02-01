@@ -15,6 +15,8 @@ build:
 
 .PHONY: analysis
 analysis:
+	$(py) -m pip install --user pycairo
+	$(py) -m pip install --user matplotlib
 	$(py) src/analysis/summarize-stats.py ${pathToDataFiles}/tsp.txt > ${pathToDataFiles}/summary.tsp.txt
 	$(py) src/analysis/summarize-stats.py ${pathToDataFiles}/atsp.txt > ${pathToDataFiles}/summary.atsp.txt
 	$(py) src/analysis/summarize-stats.py ${pathToDataFiles}/haystack.em.txt > ${pathToDataFiles}/summary.haystack.em.txt
