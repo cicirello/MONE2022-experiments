@@ -55,3 +55,11 @@ HaystackTau:
 .PHONY: HaystackLee
 HaystackLee:
 	java -cp ${JARFILE} org.cicirello.experiments.mone2022.HaystackLeeExperiments > ${pathToDataFiles}/haystack.lee.txt
+
+# Runs the principal component analysis and fitness distance correlation examples from
+# the earlier conference paper in BICT 2019.
+
+.PHONY: bict2019
+bict2019:
+	java -cp ${JARFILE} org.cicirello.experiments.mone2022.BICT2019
+
