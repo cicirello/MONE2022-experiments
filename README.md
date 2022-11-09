@@ -14,6 +14,7 @@ The above article is an extended version the following earlier conference paper:
 |  |  |
 | :--- | :--- |
 | __License__ | [![GitHub](https://img.shields.io/github/license/cicirello/MONE2022-experiments)](LICENSE) | 
+| __Packages and Releases__ | [![Maven Central](https://img.shields.io/maven-central/v/org.cicirello/mone-article-experiments.svg?label=Maven%20Central)](https://search.maven.org/artifact/org.cicirello/mone-article-experiments) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/MONE2022-experiments?logo=GitHub)](https://github.com/cicirello/MONE2022-experiments/releases) |
 
 ## Requirements to Build and Run the Experiments
 
