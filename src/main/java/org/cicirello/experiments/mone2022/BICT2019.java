@@ -29,11 +29,19 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * <p>This program replicates the principal component analysis (PCA), and the fitness distance corrleation
- * examples for the paper:<br>
- * V.A. Cicirello, <a href="https://www.cicirello.org/publications/cicirello2019bict.html">"Classification 
+ * examples for the paper:</p>
+ *
+ * <p>V.A. Cicirello, <a href="https://www.cicirello.org/publications/cicirello2019bict.html">"Classification 
  * of Permutation Distance Metrics for Fitness Landscape Analysis,"</a> 
  * <i>Proceedings of the 11th International Conference on Bio-inspired Information and Communication Technologies</i>, 
- * pages 81-97. Springer Nature, March 2019. doi:10.1007/978-3-030-24202-2_7.</p>
+ * pages 81-97. Springer Nature, March 2019. doi:<a href="https://doi.org/10.1007/978-3-030-24202-2_7">10.1007/978-3-030-24202-2_7</a></p>
+ *
+ * <p>This is also included in the following extended version of that paper:</p>
+ *
+ * <p>Vincent A. Cicirello. 2022. <a href="https://www.cicirello.org/publications/Cicirello-MONE-2022.pdf">On 
+ * Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection</a>, 
+ * <i>Mobile Networks and Applications</i>, 2022. 
+ * doi:<a href="https://doi.org/10.1007/s11036-022-02060-z">10.1007/s11036-022-02060-z</a></p>
  *
  * @author <a href=https://www.cicirello.org/>Vincent A. Cicirello</a>, 
  * <a href=https://www.cicirello.org/>https://www.cicirello.org/</a>
