@@ -5,8 +5,11 @@ Copyright &copy; 2018-2019, 2022 Vincent A. Cicirello
 This repository contains code to reproduce the experiments, and analysis of 
 experimental data, from the following paper:
 
-> Vincent A. Cicirello. 2022. On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection. *CURRENTLY UNDER REVIEW*.
+> Vincent A. Cicirello. 2022. [On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection](https://www.cicirello.org/publications/Cicirello-MONE-2022.pdf). *Mobile Networks and Applications* (2022). doi:[10.1007/s11036-022-02060-z](https://doi.org/10.1007/s11036-022-02060-z)
 
+The above article is an extended version the following earlier conference paper:
+
+> Vincent A. Cicirello. 2019. [Classification of Permutation Distance Metrics for Fitness Landscape Analysis](https://www.cicirello.org/publications/cicirello-bict2019.pdf). In *Proceedings of the 11th International Conference on Bio-inspired Information and Communication Technologies*, pages 81-97. Springer Nature, March 2019. doi:[10.1007/978-3-030-24202-2_7](https://doi.org/10.1007/978-3-030-24202-2_7)
 
 |  |  |
 | :--- | :--- |
