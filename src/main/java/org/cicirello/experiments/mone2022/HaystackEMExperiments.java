@@ -40,7 +40,14 @@ import org.cicirello.search.problems.PermutationInAHaystack;
 import org.cicirello.permutations.distance.ExactMatchDistance;
 
 /**
- * Experiments with the Permutation in a Haystack problem using the Exact Match Distance.
+ * <p>Experiments with the Permutation in a Haystack problem using the Exact Match Distance.</p>
+ *
+ * <p>Code to reproduce the experiments from the following article:</p>
+ *
+ * <p>Vincent A. Cicirello. 2022. <a href="https://www.cicirello.org/publications/Cicirello-MONE-2022.pdf">On 
+ * Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection</a>, 
+ * <i>Mobile Networks and Applications</i>, 2022. 
+ * doi:<a href="https://doi.org/10.1007/s11036-022-02060-z">10.1007/s11036-022-02060-z</a></p>
  *
  * @author <a href=https://www.cicirello.org/ target=_top>Vincent A. Cicirello</a>, 
  * <a href=https://www.cicirello.org/ target=_top>https://www.cicirello.org/</a>
