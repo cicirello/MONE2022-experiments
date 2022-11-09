@@ -11,7 +11,7 @@ The above article is an extended version the following earlier conference paper:
 
 > Vincent A. Cicirello. 2019. [Classification of Permutation Distance Metrics for Fitness Landscape Analysis](https://www.cicirello.org/publications/cicirello-bict2019.pdf). In *Proceedings of the 11th International Conference on Bio-inspired Information and Communication Technologies*, pages 81-97. Springer Nature, March 2019. doi:[10.1007/978-3-030-24202-2_7](https://doi.org/10.1007/978-3-030-24202-2_7)
 
-|  |  |
+| __Related Publications__ | [![DOI](doi.svg)](https://doi.org/10.1007/s11036-022-02060-z) |
 | :--- | :--- |
 | __License__ | [![GitHub](https://img.shields.io/github/license/cicirello/MONE2022-experiments)](LICENSE) | 
 | __Packages and Releases__ | [![Maven Central](https://img.shields.io/maven-central/v/org.cicirello/mone-article-experiments.svg?label=Maven%20Central)](https://search.maven.org/artifact/org.cicirello/mone-article-experiments) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/MONE2022-experiments?logo=GitHub)](https://github.com/cicirello/MONE2022-experiments/releases) |
