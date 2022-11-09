@@ -13,7 +13,9 @@
 	
 	<description>This package contains Java programs for reproducing the 
 	experiments, and analysis of experimental data, from the following 
-	article: NOTE TO SELF....  FILL THIS IN BEFORE PUBLISHING TO MAVEN CENTRAL.
+	article: Cicirello, V.A. On Fitness Landscape Analysis of Permutation 
+	Problems: From Distance Metrics to Mutation Operator Selection. Mobile 
+	Networks and Applications (2022). https://doi.org/10.1007/s11036-022-02060-z.
 	</description>
 	
 	<url>https://github.com/cicirello/MONE2022-experiments</url>
@@ -78,7 +80,7 @@
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.8</version>
+						<version>1.6.13</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>ossrh</serverId>
@@ -126,7 +128,7 @@
 					<plugin>
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>0.8.7</version>
+						<version>0.8.8</version>
 						<executions>
 							<execution>
 								<goals>
@@ -199,7 +201,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.9.0</version>
+				<version>3.10.1</version>
 				<configuration>
 					<release>11</release>
 				</configuration>
@@ -220,7 +222,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.3.1</version>
+				<version>3.4.1</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -241,7 +243,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>3.0.0-M7</version>
 				<configuration>
 				<includes>
 					<include>**/*TestCases.java</include>
@@ -255,7 +257,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.4</version>
+				<version>3.4.1</version>
 				<configuration>
 					<shadedArtifactAttached>true</shadedArtifactAttached>
 					<shadedClassifierName>jar-with-dependencies</shadedClassifierName>
