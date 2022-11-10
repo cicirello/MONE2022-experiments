@@ -69,6 +69,21 @@ a Java project built with Maven, the `.class` files, the `.jar` file,
 etc will be found in a `target` directory that is created by the 
 build process.
 
+## Downloading a prebuilt jar (Option 2)
+
+As an alternative to building the jar (see above), you can choose to instead
+download a prebuilt jar of the experiments from the Maven Central repository.
+The Makefile contains a target that will do this for you, provided that you have
+curl installed on your system. To download the jar of the precompiled code of 
+the experiments, run the following from the root of the repository:
+
+```shell
+make download
+```
+
+The jar that it downloads contains the compiled code of the experiments as well
+as all dependencies within a single jar file.
+
 ## Running the Experiments
 
 If you just want to inspect the data from my runs, then you can find that output
