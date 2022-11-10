@@ -11,6 +11,15 @@ pathToDataFiles = "data"
 build:
 	mvn clean package
 
+.PHONY: download
+download:
+ifeq ($(OS),Windows_NT)
+	if not exist target mkdir target
+else
+	mkdir -p target
+endif
+	cd target && curl -O -J -L  "https://search.maven.org/classic/remotecontent?filepath=org/cicirello/mone-article-experiments/1.0.0/mone-article-experiments-1.0.0-jar-with-dependencies.jar"
+
 # Analyzes data assuming experiments already run
 
 .PHONY: analysis
