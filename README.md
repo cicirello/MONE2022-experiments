@@ -14,7 +14,7 @@ The above article is an extended version the following earlier conference paper:
 | __Related Publications__ | [![DOI](doi.svg)](https://doi.org/10.1007/s11036-022-02060-z) [![DOI](bict-doi.svg)](https://doi.org/10.1007/978-3-030-24202-2_7) |
 | :--- | :--- |
 | __License__ | [![GitHub](https://img.shields.io/github/license/cicirello/MONE2022-experiments)](LICENSE) | 
-| __Packages and Releases__ | [![Maven Central](https://img.shields.io/maven-central/v/org.cicirello/mone-article-experiments.svg?label=Maven%20Central)](https://central.sonatype.com/search?namespace=org.cicirello&q=mone-article-experiments) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/MONE2022-experiments?logo=GitHub)](https://github.com/cicirello/MONE2022-experiments/releases) |
+| __Packages and Releases__ | [![Maven Central](https://img.shields.io/maven-central/v/org.cicirello/mone-article-experiments.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/org.cicirello/mone-article-experiments/) [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/MONE2022-experiments?logo=GitHub)](https://github.com/cicirello/MONE2022-experiments/releases) |
 
 ## Requirements to Build and Run the Experiments
 
