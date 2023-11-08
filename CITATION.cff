@@ -1,10 +1,10 @@
-cff-version: "1.1.0"
-message: "If you use this software, please cite it using these metadata."
+cff-version: "1.2.0"
+message: "If you use this software, please cite the article from preferred-citation."
 authors: 
 - family-names: "Cicirello"
   given-names: "Vincent A"
   orcid: "https://orcid.org/0000-0003-1072-8559"
-title: "Experiments for article in the journal MONE 2022"
+title: "Experiments for article in the journal MONE 2023"
 license: "GPL-3.0-or-later"
 url: "https://github.com/cicirello/MONE2022-experiments"
 preferred-citation:
@@ -16,4 +16,9 @@ preferred-citation:
   doi: "10.1007/s11036-022-02060-z"
   journal: "Mobile Networks and Applications"
   title: "On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection"
-  year: 2022
+  year: 2023
+  volume: 28
+  issue: 2
+  start: 507
+  end: 517
+  month: "April"
