@@ -1,11 +1,11 @@
 # MONE2022-experiments
 
-Copyright &copy; 2018-2019, 2022 Vincent A. Cicirello
+Copyright &copy; 2018-2019, 2022-2023 Vincent A. Cicirello
 
 This repository contains code to reproduce the experiments, and analysis of 
 experimental data, from the following paper:
 
-> Vincent A. Cicirello. 2022. [On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection](https://www.cicirello.org/publications/Cicirello-MONE-2022.pdf). *Mobile Networks and Applications* (2022). doi:[10.1007/s11036-022-02060-z](https://doi.org/10.1007/s11036-022-02060-z)
+> Vincent A. Cicirello. 2023. [On Fitness Landscape Analysis of Permutation Problems: From Distance Metrics to Mutation Operator Selection](https://www.cicirello.org/publications/Cicirello-MONE-2022.pdf). *Mobile Networks and Applications* 28(2): 507-517, April 2023. doi:[10.1007/s11036-022-02060-z](https://doi.org/10.1007/s11036-022-02060-z)
 
 The above article is an extended version the following earlier conference paper:
 
