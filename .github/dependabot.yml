@@ -4,9 +4,10 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-# DISABLED DEPENDABOT: e.g., freezing
-updates: [] # empty list of updates
-  #- package-ecosystem: "github-actions" # See documentation for possible values
-  #  directory: "/" # Location of package manifests
-  #  schedule:
-  #    interval: "daily"
+
+updates:
+  - package-ecosystem: "github-actions" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 0 # DISABLED DEPENDABOT: e.g., freezing
