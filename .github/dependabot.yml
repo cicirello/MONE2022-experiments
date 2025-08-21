@@ -5,7 +5,7 @@
 
 version: 2
 # DISABLED DEPENDABOT: e.g., freezing
-# updates:
+updates: [] # empty list of updates
   #- package-ecosystem: "github-actions" # See documentation for possible values
   #  directory: "/" # Location of package manifests
   #  schedule:
