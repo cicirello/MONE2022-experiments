@@ -4,8 +4,8 @@
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-updates:
-  # DISABLED DEPENDABOT: e.g., freezing
+# DISABLED DEPENDABOT: e.g., freezing
+# updates:
   #- package-ecosystem: "github-actions" # See documentation for possible values
   #  directory: "/" # Location of package manifests
   #  schedule:
